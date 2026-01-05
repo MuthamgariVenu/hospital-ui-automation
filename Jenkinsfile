@@ -11,7 +11,8 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/your-repo/automation-framework.git'
+                 git url: 'https://github.com/MuthamgariVenu/hospital-ui-automation.git'
+
             }
         }
 
