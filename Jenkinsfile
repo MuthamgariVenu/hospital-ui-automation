@@ -10,10 +10,10 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git branch: 'main',
-                 git url: 'https://github.com/MuthamgariVenu/hospital-ui-automation.git'
+    git branch: 'main',
+        url: 'https://github.com/MuthamgariVenu/hospital-ui-automation.git'
+}
 
-            }
         }
 
         stage('Build & Test') {
