@@ -1,0 +1,4 @@
+core\BaseTest.class
+utils\TestDataFactory.class
+tests\smoke\DummyTest.class
+pages\HomePage.class
