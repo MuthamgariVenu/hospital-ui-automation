@@ -16,13 +16,12 @@ pipeline {
 
         }
 
-        stage('Build & Test') {
-            steps {
-                bat """
-                mvn clean test -P%ENV% -Dbrowser=%BROWSER%
-                """
-            }
-        }
+       stage('Build & Test') {
+    steps {
+        sh 'mvn clean test -Denv=qa -Dbrowser=chrome'
+    }
+}
+
     }
 
     post {
